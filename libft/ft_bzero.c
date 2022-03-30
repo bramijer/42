@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 11:18:09 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/26 13:34:42 by jbrami           ###   ########.fr       */
+/*   Created: 2022/03/25 14:08:07 by jbrami            #+#    #+#             */
+/*   Updated: 2022/03/26 16:13:36 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
+#include <string.h>
 
-/* functions return 0 if the caracter test false and return non-zero if the caracter tests true */
+/* bzero function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to the arear 
+ * s : existing object that you want to fill with zeroes
+ * n : th number of bytes to fill*/
 
-int isdigit (int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if ('0' >= c && '9'<= c)
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)s;
+	while (n > 0)
 	{
-		return (1);
+		*ptr++ = 0;
+		n--;
 	}
-	return (0);
 }
 
 int main()
 {
-	return isdigit('9');
+	return (0);
 }

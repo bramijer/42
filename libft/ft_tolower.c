@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 11:18:09 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/26 13:34:42 by jbrami           ###   ########.fr       */
+/*   Created: 2022/03/27 20:58:09 by jbrami            #+#    #+#             */
+/*   Updated: 2022/03/27 21:01:37 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* functions return 0 if the caracter test false and return non-zero if the caracter tests true */
+#include <stdio.h>
 
-int isdigit (int c)
+int		ft_tolower(int c)
 {
-	if ('0' >= c && '9'<= c)
+	if (c >= 'A' && c <= 'Z')
 	{
-		return (1);
+		return (c + 32);
 	}
-	return (0);
+	else
+	{
+		return (c);
+	}
 }
 
 int main()
 {
-	return isdigit('9');
+	printf("%c", ft_tolower('J'));
+	return (0);
 }
