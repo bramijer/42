@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 16:17:33 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/30 17:36:48 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 16:02:16 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 
 int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int i;
-	i = 0;
+	unsigned int	i;
 
+	i = 0;
 	while (s1[i] != '\0' && (s1[i] == s2[i] && i < n))
 	{
 		i++;
@@ -35,7 +35,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (s1[i] - s2[i]);
 }
 
-int main ()
+/*int	main (void)
 {
 	char s1[] = "itest";
 	char s2[] = "test";
@@ -45,4 +45,4 @@ int main ()
 	c = ft_strncmp(s1, s2, 2);
 	printf("%i", c);
 	return (0);
-}
+}*/

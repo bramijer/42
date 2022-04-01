@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:26:57 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/30 21:54:57 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 00:46:46 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * le premier argument est void *b
  * int vaut 4 octets, donc on le caste dans un char afin de lire charactere par charactere 
  * pourquoi unsigned ? parce que on le compare a la longueur (size_t) il est focement positif
- * */ 
+ * */
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -34,23 +34,22 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-//int main()
-//{
-//	char s[] = "bonjour";
-//	int tab [4] = {1, 2, 3, 4};
-//	int i = 0;
-//
-//	printf("str pre memset : %s\n", s);
-//	printf("resultat jerome : %p\n", ft_memset(s, -10, 3));
-//	printf("str post memset jerome : %s\n", s);
-//	printf("resultat fct originale : %p\n", memset(s, -10, 4));
-//	printf("str post memset fct originale : %s\n", s);
-//	ft_memset(tab, '5', 1);
-//	while (i < 4)
-//	{
-//		printf("tab post memset : %d\n", tab[i]);
-//		i++;
-//	}
-//	return (0);
-//}
-//
+/*int main()
+{
+	char s[] = "bonjour";
+	int tab [4] = {1, 2, 3, 4};
+	int i = 0;
+
+	printf("str pre memset : %s\n", s);
+	printf("resultat jerome : %p\n", ft_memset(s, -10, 3));
+	printf("str post memset jerome : %s\n", s);
+	printf("resultat fct originale : %p\n", memset(s, -10, 4));
+	printf("str post memset fct originale : %s\n", s);
+	ft_memset(tab, '5', 1);
+	while (i < 4)
+	{
+		printf("tab post memset : %d\n", tab[i]);
+		i++;
+	}
+	return (0);
+}*/

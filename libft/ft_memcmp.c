@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 18:41:52 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/30 20:29:49 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 00:42:12 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-/* The memcmp function compares byte string s1 against byte string s2. Both string are assumed to be n bytes long.
- * RETURN VALUES : The memcmp function return zero if the two strings are identical, otherwise returns the difference betwenn the first two differing bytes. 
+/* The memcmp function compares byte string s1 against byte string s2. 
+Both string are assumed to be n bytes long.
+ * RETURN VALUES : The memcmp function return zero if the two strings are identical, 
+ otherwise returns the difference betwenn the first two differing bytes. 
  * Zero lentgh string are always identical.
  * */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
@@ -40,14 +42,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-int main()
+/*int	main(void)
 {
-	char s1[] = "test1";
-	char s2[] = "test2";
-	int 	c;
+	char	s1[] = "test1";
+	char	s2[] = "test2";
+	int		c;
 	c = 0;
 
 	c = ft_memcmp(s1, s2, 2);
 	printf("%i", c);
 	return (0);
-}
+}*/

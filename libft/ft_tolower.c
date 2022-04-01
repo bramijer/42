@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 20:58:09 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/27 21:01:37 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 16:03:00 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
@@ -24,8 +24,8 @@ int		ft_tolower(int c)
 	}
 }
 
-int main()
+/*int main(void)
 {
 	printf("%c", ft_tolower('J'));
 	return (0);
-}
+}*/

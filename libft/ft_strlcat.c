@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 18:07:29 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/27 18:36:30 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 16:00:33 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
  * strlcat appends string src to the end of dst. It will append most dstsize - strlen(dst) - 1 characters. It will then NUL-terminate, unless dstsize is 0 or the original dst string was longer than dstsize (in practice this should not happen as it means that eiher dstsize is incorrect or that dst is not proper thing).
  * */
 
-size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
+	size_t	i;
 
 	if (!dstsize)
 	{
@@ -34,8 +34,8 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (ft_strlen(src));
 }
 
-int main()
+/*int	main(void)
 {
 	printf("%s", (char *)ft_strlcpy(ac[1], av[2], 4));
 	return (0);
-}
+}*/

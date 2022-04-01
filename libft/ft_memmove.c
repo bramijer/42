@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:40:04 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/30 20:24:58 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 00:45:22 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,13 @@
 /* memove function copies len bytes from string src to string dst. The two strings may overlap; the copy is always done in a non-destructive manner.
  * return values : memove function returns the orginal value of dst */
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*destination;
 	unsigned char	*source;
 
 	destination = (unsigned char *)dst;
 	source = (unsigned char *)src;
-
 	if (src == dst)
 	{
 		return (dst);
@@ -43,8 +42,8 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-int main(int ac, char **av)
+/*int	main(int ac, char **av)
 {
 	printf("%s", (char *)ft_memmove(av[1], av[2], 4));
 	return (0);
-}
+}*/
