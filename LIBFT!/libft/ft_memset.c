@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbrami <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:26:57 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/25 18:20:11 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/03/31 00:46:46 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-//#include <libft.h>
+
 #include <string.h>
 #include <stdio.h>
 
@@ -18,7 +18,7 @@
  * le premier argument est void *b
  * int vaut 4 octets, donc on le caste dans un char afin de lire charactere par charactere 
  * pourquoi unsigned ? parce que on le compare a la longueur (size_t) il est focement positif
- * */ 
+ * */
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -34,7 +34,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-int main()
+/*int main()
 {
 	char s[] = "bonjour";
 	int tab [4] = {1, 2, 3, 4};
@@ -52,4 +52,4 @@ int main()
 		i++;
 	}
 	return (0);
-}
+}*/
