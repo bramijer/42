@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 23:48:46 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/01 19:59:19 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/02 20:19:22 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,34 +17,37 @@ it encounters the first character that isn't a number
 RETURN VALUES : la fonction atoi retourne la valeur 0 si la chaine de caractere ne contient pas 
 une representation de valeur numerique */
 
+#include <stdio.h>
 
-int	atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long int	result;
-	int			negativ;
+	long int	negativ;
 
-	negativ = 1;
 	result = 0;
+	negativ = 1;
 	while (*str == ' ' || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '+')
-		str++;
-	else if (*str == '-')
 	{
-		negativ = -1;
+		str++;
+	}
+	if (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+		{
+			negativ = -1;
+		}
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		result = (result * 10) + (*str - 48);
+		result = result * 10 + *str - 48;
 		str++;
 	}
 	return (result * negativ);
+}
 
-	#include <stdio.h>
-
-int		main(int argc, char **argv)
+int		main(void)
 {
-	(void)argc;
-	printf("%d\n", ft_atoi(argv[1]));
+	
+	printf("%d\n", ft_atoi("35"));
 }
