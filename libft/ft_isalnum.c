@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 11:26:15 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 00:34:46 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/03 18:36:49 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ int	isalnum (int c)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	return isalnum('B');
 }
+*/
