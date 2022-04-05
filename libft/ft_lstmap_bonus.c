@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 16:03:27 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:42:05 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 16:58:12 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 16:58:23 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isascii function test for an ASCII character, 
-which is any character between 0 and 127 */
+#include <stdlib.h>
+#include "libft.h"
 
-int	isascii (int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (c >= 0 && c <= 127)
+	t_list	*new;
+	t_list	*elem;
+
+	new = NULL;
+	while (lst)
 	{
-		return (1);
+		elem = ft_lstnew(f(lst->content));
+		if (!elem)
+		{
+			ft_lstclear(&new, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new, elem);
+		lst = lst->next;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	return isascii('K');
+	return (new);
 }

@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 16:03:27 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:42:05 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 19:26:14 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 19:26:21 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isascii function test for an ASCII character, 
-which is any character between 0 and 127 */
+#include <unistd.h>
 
-int	isascii (int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (c >= 0 && c <= 127)
+	while (*s)
 	{
-		return (1);
+		write(fd, s, 1);
+		s++;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	return isascii('K');
 }

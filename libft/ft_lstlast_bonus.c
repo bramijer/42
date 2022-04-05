@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 16:03:27 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:42:05 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 16:02:55 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 16:03:01 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isascii function test for an ASCII character, 
-which is any character between 0 and 127 */
+#include "libft.h"
 
-int	isascii (int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (c >= 0 && c <= 127)
+	if (!lst)
+		return (NULL);
+	while (lst->next)
 	{
-		return (1);
+		lst = lst->next;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	return isascii('K');
+	return (lst);
 }

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 16:03:27 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:42:05 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 16:01:26 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 16:01:32 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isascii function test for an ASCII character, 
-which is any character between 0 and 127 */
+#include "libft.h"
+#include <stdlib.h>
 
-int	isascii (int c)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (c >= 0 && c <= 127)
+	if (lst)
 	{
-		return (1);
+		del(lst->content);
+		free(lst);
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	return isascii('K');
 }

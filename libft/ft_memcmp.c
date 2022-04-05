@@ -6,11 +6,12 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 18:41:52 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 00:42:12 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 17:02:45 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stddef.h>
 
 /* The memcmp function compares byte string s1 against byte string s2. 
 Both string are assumed to be n bytes long.
@@ -18,38 +19,30 @@ Both string are assumed to be n bytes long.
  otherwise returns the difference betwenn the first two differing bytes. 
  * Zero lentgh string are always identical.
  * */
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
-{
-	unsigned const char		*t1;
-	unsigned const char		*t2;
 
-	t1 = (unsigned const char *)s1;
-	t2 = (unsigned const char *)s2;
-	if (t1 == NULL || t2 == NULL)
+int	ft_memcmp(const void *p1, const void *p2, size_t size)
+{
+	unsigned char	*cast1;
+	unsigned char	*cast2;
+	size_t			i;
+
+	i = 0;
+	cast1 = (unsigned char *)p1;
+	cast2 = (unsigned char *)p2;
+	while (i < size)
 	{
-		return (0);
-	}
-	while (n)
-	{
-		if (*t1 != *t2)
-		{
-			return (*t1 - *t2);
-		}
-	t1++;
-	t2++;
-	n--;
+		if (!(cast1[i] == cast2[i]))
+			return ((cast1[i] - cast2[i]));
+		i++;
 	}
 	return (0);
 }
 
-/*int	main(void)
+int main(void)
 {
-	char	s1[] = "test1";
-	char	s2[] = "test2";
-	int		c;
-	c = 0;
-
-	c = ft_memcmp(s1, s2, 2);
-	printf("%i", c);
-	return (0);
-}*/
+	char tab[] =    {0, 1, 9, 6, 5, 3, -32, 65, 84, 2, 32, 81, 2};
+	char tabDub[] = {0, 1, 9, 6, 5, 3, 32, 65, 84, 2, 32, -81, 2};
+	char randomStr[] = {0, -98, 65, 34, 21, 0, 84, 75, 65, 0, 32, 3, 0};
+	char randomStrNd[] = {65, 2, 0, 4, 0, 87, 98, -65, 0, 2 ,7, 32, 0};
+	printf("%d  %d\n", ft_memcmp(tab, tabDub, 8), memcmp(tab, tabDub, 8));
+}

@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 23:48:46 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/02 20:19:22 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 15:46:07 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ int	ft_atoi(const char *str)
 
 int		main(void)
 {
-	
 	printf("%d\n", ft_atoi("35"));
+	return (0);
 }

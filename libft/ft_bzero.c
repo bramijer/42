@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 14:08:07 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 00:32:20 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 15:34:31 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ to by s, by writing zeros (bytes containing '\0') to the arear
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*ptr;
+	char	*ptr;
 
-	ptr = (unsigned char *)s;
+	ptr = (char *)s;
 	while (n > 0)
 	{
 		*ptr++ = 0;

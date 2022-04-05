@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 21:39:02 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/03 23:51:34 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 19:28:13 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ argument to the function free. If insufficient memory is available, NULL is retu
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+
 
 void    ft_putchar(char c)
 {

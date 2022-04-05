@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 16:03:27 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:42:05 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 19:29:08 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 19:29:15 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isascii function test for an ASCII character, 
-which is any character between 0 and 127 */
-
-int	isascii (int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if (c >= 0 && c <= 127)
+	int		i;
+
+	i = 0;
+	while (s[i])
 	{
-		return (1);
+		(f)(i, &s[i]);
+		i++;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	return isascii('K');
 }

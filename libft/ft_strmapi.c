@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 16:03:27 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:42:05 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 19:31:52 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 19:32:08 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isascii function test for an ASCII character, 
-which is any character between 0 and 127 */
+#include <stdlib.h>
+#include "libft.h"
 
-int	isascii (int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= 0 && c <= 127)
+	int		i;
+	char	*result;
+
+	result = malloc(ft_strlen(s) + 1);
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (s[i])
 	{
-		return (1);
+		result[i] = (f)(i, s[i]);
+		i++;
 	}
-	return (0);
+	result[i] = 0;
+	return (result);
 }
 
-int	main(void)
+int main (void)
 {
-	return isascii('K');
+ 	char *s = "abcdefDLF";
+ 	printf("%s\n", ft_strmapi(s, &ft_toupper));
 }

@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 22:43:06 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/03 21:37:38 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 15:37:03 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,6 @@ If there is an error, they return a NULL pointer. The free function does not ret
 
 #include <stdio.h>
 #include <stdlib.h>
-
-void	ft_bzero(void *s, size_t n)
-{
-	unsigned char	*ptr;
-
-	ptr = (unsigned char *)s;
-	while (n > 0)
-	{
-		*ptr++ = 0;
-		n--;
-	}
-}
 
 void    *ft_calloc(size_t count, size_t size)
 {
