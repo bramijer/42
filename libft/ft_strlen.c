@@ -6,22 +6,22 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 16:48:55 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 16:01:27 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 20:56:55 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 /* strlen function computes th length of the string. returns the number of characters that precede the terminating NUL character */
 
-size_t	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t i;
 
 	i = 0;
-	while (str[i] != '\0')
-	{
+	while (str[i])
 		i++;
-	}
 	return (i);
 }
 

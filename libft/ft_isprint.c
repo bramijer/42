@@ -6,11 +6,13 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 16:23:42 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:56:17 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:00:56 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* printing character test, the function isprint tests for any printing character, including spaces. The value of the argument must be representable as un unsigned char. the functions return zero if the character tests false and return non-zero if the character tests true */
+
+#include "libft.h"
 
 int	isprint(int c)
 {
@@ -21,7 +23,7 @@ int	isprint(int c)
 	return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	return isprint('B');
-}
+}*/

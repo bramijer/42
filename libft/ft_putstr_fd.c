@@ -6,10 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:26:14 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:26:21 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:10:25 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)

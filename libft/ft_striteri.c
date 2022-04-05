@@ -6,9 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:29:08 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:29:15 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:02:22 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

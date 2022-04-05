@@ -6,12 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:40:04 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 00:45:22 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:01:27 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 /* memove function copies len bytes from string src to string dst. The two strings may overlap; the copy is always done in a non-destructive manner.
  * return values : memove function returns the orginal value of dst */

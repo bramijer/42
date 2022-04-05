@@ -6,12 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:26:57 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 00:46:46 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:01:31 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 /* memset function write len bytes of value c to the string b
  * return value : memset function returns its first argument 

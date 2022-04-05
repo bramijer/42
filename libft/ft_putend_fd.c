@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonu.c                              :+:      :+:    :+:   */
+/*   ft_putend_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 15:59:11 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:59:27 by jbrami           ###   ########.fr       */
+/*   Created: 2022/04/05 19:24:45 by jbrami            #+#    #+#             */
+/*   Updated: 2022/04/05 21:01:43 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (!*lst)
-		*lst = new;
-	else if (ft_lstlast(*lst))
-		ft_lstlast(*lst)->next = new;
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

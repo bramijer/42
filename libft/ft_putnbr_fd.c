@@ -6,11 +6,10 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:25:21 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:25:50 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:01:49 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
@@ -41,8 +40,8 @@ void	ft_putnbr_fd(int n, int fd)
 }
 
 #include <fcntl.h>
-nt main(void)
+/*int main(void)
 {
     int x = open("test.txt", O_RDWR);
  	ft_putnbr_fd(-42, x);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 23:48:46 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:46:07 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 20:59:55 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ it encounters the first character that isn't a number
 RETURN VALUES : la fonction atoi retourne la valeur 0 si la chaine de caractere ne contient pas 
 une representation de valeur numerique */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -46,8 +46,8 @@ int	ft_atoi(const char *str)
 	return (result * negativ);
 }
 
-int		main(void)
+/*int		main(void)
 {
 	printf("%d\n", ft_atoi("35"));
 	return (0);
-}
+}*/

@@ -6,12 +6,12 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:29:57 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:30:13 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:13:02 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
+#include <stdlib.h>
 
 static int	ft_strcpy_reti(char *dest, const char *src)
 {
@@ -54,7 +54,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (joined);
 }
 
-int main(void)
+/*int main(void)
 {
  	printf("%s\n", ft_strjoin("tripouille", "42"));
-}
+}*/

@@ -6,13 +6,12 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:34:09 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:34:41 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:17:59 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -38,8 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 
 
-int main (void)
+/*int main (void)
 {
  	char *s = ft_substr("tripouille", 100, 1);
  	printf("result:%d_\n", strcmp(s, ""));
-}
+}*/

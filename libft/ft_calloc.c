@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 22:43:06 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:37:03 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:08:23 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,20 @@ created via the preceding allocation functions.
 RETURN VALUES : If successfull calloc function return a pointer to allocate memory. 
 If there is an error, they return a NULL pointer. The free function does not return a value. */
 
-#include <stdio.h>
+#include "libft.h"
 #include <stdlib.h>
+
+void	ft_bzero(void *s, size_t n)
+{
+	char	*ptr;
+
+	ptr = (char *)s;
+	while (n > 0)
+	{
+		*ptr++ = 0;
+		n--;
+	}
+}
 
 void    *ft_calloc(size_t count, size_t size)
 {

@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:35:08 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:36:24 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:17:35 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ typedef struct s_list
 }	t_list;
 
 void	ft_lstclear(t_list **lst, void (*del)(void *));
-char	*ft_strrchr(char *str, int c);
-void	ft_bzero(void *s, int n);
+void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nitems, size_t size);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
@@ -34,15 +33,15 @@ void	*ft_memset(void *dest, int c, size_t len);
 int		ft_memcmp(const void *p1, const void *p2, size_t size);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 char	*ft_strchr(const char *str, int c);
-int		ft_strlen(const char *s);
+size_t		ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strnstr(char *str, char *to_find, size_t n);
-char	*ft_strrchr(char *str, int c);
+char	*ft_strnstr(const char *haystack, const char *needle);
+char	*ft_strrchr(const char *s, int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *s1);
 void	*ft_memmove(void *dest, const void *src, size_t len);
 int		ft_atoi(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);

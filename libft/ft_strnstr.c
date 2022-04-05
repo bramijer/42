@@ -6,12 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 16:05:35 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 22:46:16 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:15:13 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 /* The strnstr function locates the first occurence of the null-terminated string needle in the string haystack,
 where not more than len characters are searched. Characters that appaear after a '\0' character are not searched. 
@@ -22,13 +21,15 @@ otherwise a pointer to the first character of the first occurence of needle is r
 HAYSTACK : meule de foin
 NEEDLE : aiguille */
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle)
 {
 	size_t	i;
 	size_t	j;
+	size_t	len;
 	
 	i = 0;
 	j = 0;
+	len = 0;
 	
 	if (!*haystack)
 	{
@@ -49,15 +50,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 return (NULL);
 }
 
-int	main(void)
+/*int	main(void)
 {
-	//char s1[] = "itest";
-	//char s2[] = "test";
-//
-	//int c;
-	//c = 0;
-	//c = ft_strnstr(s1, s2, 4);
-	//printf("%i", c);
+	char s1[] = "itest";
+	char s2[] = "test";
+
+	int c;
+	c = 0;
+	c = ft_strnstr(s1, s2, 4);
+	printf("%i", c);
 	printf("%s", ft_strnstr("itest", "test",5));
 	return (0);
-}
+}*/

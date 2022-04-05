@@ -6,11 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 16:17:33 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 16:02:16 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:02:52 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 /* The strncmp function lexicographically compare the null-terminated strings S1 and S2. The strncmp function compares not more than n characters. Because strncmp is designed for comparing strings rather than binary data, characters that appear after a '\0' character are not compared.
  * RETURN VALUES : Strncmp function return an integer greater thanm equal to, or less than 0, according as the string s2. The comparaison is done using unsigned characters, so that '\200' is greater than '\0'. */

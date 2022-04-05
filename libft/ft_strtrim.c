@@ -6,13 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:32:58 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:33:34 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:03:16 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
-#include <stdio.h>
 
 static int	in_set(char c, char const *set)
 {
@@ -50,7 +48,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (result);
 }
 
-int main (void)
+/*int main (void)
 {
     printf("%s\n", ft_strtrim("m", "tg"));
-}
+}*/

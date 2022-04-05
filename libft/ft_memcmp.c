@@ -6,12 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 18:41:52 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 17:02:45 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:01:16 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 /* The memcmp function compares byte string s1 against byte string s2. 
 Both string are assumed to be n bytes long.
@@ -38,11 +37,11 @@ int	ft_memcmp(const void *p1, const void *p2, size_t size)
 	return (0);
 }
 
-int main(void)
+/*int main(void)
 {
 	char tab[] =    {0, 1, 9, 6, 5, 3, -32, 65, 84, 2, 32, 81, 2};
 	char tabDub[] = {0, 1, 9, 6, 5, 3, 32, 65, 84, 2, 32, -81, 2};
 	char randomStr[] = {0, -98, 65, 34, 21, 0, 84, 75, 65, 0, 32, 3, 0};
 	char randomStrNd[] = {65, 2, 0, 4, 0, 87, 98, -65, 0, 2 ,7, 32, 0};
 	printf("%d  %d\n", ft_memcmp(tab, tabDub, 8), memcmp(tab, tabDub, 8));
-}
+}*/

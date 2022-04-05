@@ -1,5 +1,6 @@
 NAME = libft.a
-OBJS = ${BONUS:.c=0}
+OBJS = ${SRCS:.c=.o}
+OBJSB = ${BONUS:.c=.o}
 CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
@@ -12,9 +13,7 @@ SRCS =  ft_atoi.c \
 		ft_isascii.c \
 		ft_isdigit.c \
 		ft_isdigit.c \
-		ft_islower.c \
 		ft_isprint.c \
-		ft_isupper.c \
 		ft_itoa.c \
 		ft_memchr.c \
 		ft_memcmp.c \
@@ -23,7 +22,7 @@ SRCS =  ft_atoi.c \
 		ft_memset.c \
 		ft_putchar_fd.c \
 		ft_putend_fd.c \
-		ft_putnbr.c \
+		ft_putnbr_fd.c \
 		ft_putstr_fd.c \
 		ft_split.c \
 		ft_strchr.c \
@@ -40,23 +39,28 @@ SRCS =  ft_atoi.c \
 		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c \
+		ft_toupper.c 
 
 BONUS = ft_lstadd_back_bonus.c \
 		ft_lstadd_front_bonus.c \
 		ft_lstclear_bonus.c \
 		ft_lstdelone_bonus.c \
 		ft_lstiter_bonus.c \
-		ft_lstlastbonus.c \
+		ft_lstlast_bonus.c \
 		ft_lstmap_bonuis.c \
 		ft_lstsize_bonus.c \
-		ft_lstnew_bonus.c \
+		ft_lstnew_bonus.c 
 
 all: ${NAME}
-.c.o: ${CC} ${CFLAGS}-c$<-o ${<:.c=.o}
-${NAME}: ${OBJS}arrc${NAME}${OBJS}
-bonus: @makeSRCS="$(SRCS)$(BONUS)"
-clean: ${RM}${OBJS}${OBJS_BONUS}
-fclean:clean${RM}${NAME}
-re:fclean all
+.c.o: 
+	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+${NAME}: ${OBJS}
+	ar rc ${NAME} ${OBJS}
+bonus: 
+	@make SRCS="$(SRCS)$(BONUS)"
+clean: 
+	${RM}${OBJS}${OBJSB}
+fclean: clean
+	${RM}${NAME}
+re:clean all
 .PHONY: all clean fclean re bonus

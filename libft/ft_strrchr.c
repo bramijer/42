@@ -6,11 +6,11 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 19:44:58 by jbrami            #+#    #+#             */
-/*   Updated: 2022/03/31 16:02:42 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:03:07 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 /* The strrchr function locates the last occurence of c (converted to a char) in the string pointed to by s. The terminating null character is considered to be part of the string; therefore if c is '\0', the function locate the terminating '\0'. 
  * RETURN VALUES : The function strrchr return a pointer to the located character, or NULL if the character does not appear in the string. */

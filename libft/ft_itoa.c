@@ -6,12 +6,12 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 15:57:52 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 15:58:33 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:08:39 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 static char	*ft_strrev(char *s)
 {
@@ -99,7 +99,7 @@ char	*ft_itoa(int n)
 	return (ft_strrev(str));
 }
 
-int main(void)
+/*int main(void)
 {
     printf("%s\n", ft_itoa(-1234));
-}
+}*/

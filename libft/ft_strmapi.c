@@ -6,12 +6,12 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:31:52 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 19:32:08 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/05 21:13:17 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -31,8 +31,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 
-int main (void)
+/*int main (void)
 {
  	char *s = "abcdefDLF";
  	printf("%s\n", ft_strmapi(s, &ft_toupper));
-}
+}*/
