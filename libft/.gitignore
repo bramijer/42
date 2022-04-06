@@ -5,5 +5,7 @@ bonus
 
 bin/
 tripouille/
+libft-unit-test/
+libfttester/
 
 libft.a
