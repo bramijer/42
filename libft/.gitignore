@@ -1,0 +1,9 @@
+*.o
+*.out
+*.DS_Store
+bonus
+
+bin/
+tripouille/
+
+libft.a
