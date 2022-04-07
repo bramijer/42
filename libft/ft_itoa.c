@@ -6,12 +6,17 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 15:57:52 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/05 21:08:39 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/07 14:19:29 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/* La fonction ITOA transforme l'int N en une chaine de caractères. La chaine de 
+caractères est placé dans le buffer (mémoire temporaire utilisé pour stocker des 
+commandes d'entrées et de sorties. Toutes les commandes d'entrées et de sorties
+sont stockées dans le buffer). */
 
 static char	*ft_strrev(char *s)
 {
