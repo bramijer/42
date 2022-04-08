@@ -6,7 +6,7 @@
 /*   By: jbrami <jbrami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 11:26:15 by jbrami            #+#    #+#             */
-/*   Updated: 2022/04/07 12:48:24 by jbrami           ###   ########.fr       */
+/*   Updated: 2022/04/08 15:01:29 by jbrami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-/*int	main(void)
-{
-	return ft_isalnum('B') ≥........//////////§
